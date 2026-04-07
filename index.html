@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>有店 - 找到能坐下来的店</title>
+  <meta name="description" content="有店：快速找到附近适合学习与办公的店。支持插座、Wi-Fi、厕所等条件筛选，查看真实用户补充与评论。" />
+  <style>
+    :root {
+      --bg: #f8f6f2;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --sub: #5a5a5a;
+      --brand: #3f6f55;
+      --brand-2: #d9c5ad;
+      --line: #e7dfd6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f7f4ef 0%, #f3eee7 100%);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 18px 56px; }
+    .hero {
+      background: radial-gradient(circle at 20% 10%, #efe4d6 0%, #e6d7c4 45%, #dcc9b3 100%);
+      border: 1px solid #d6c4ad;
+      border-radius: 18px;
+      padding: 24px;
+    }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.2; }
+    .lead { margin: 0; color: #3f3f3f; font-size: 17px; }
+    .grid {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 16px; }
+    .card p { margin: 0; color: var(--sub); font-size: 14px; }
+    .cta {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      font-size: 14px;
+    }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-secondary { background: #fff; border-color: var(--line); color: #2f2f2f; }
+    .foot {
+      margin-top: 20px;
+      color: #6b6b6b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>有店</h1>
+      <p class="lead">找到能坐下来的店。快速筛选附近适合学习、办公、开会和聊天的门店。</p>
+      <div class="grid">
+        <article class="card">
+          <h3>地图找店</h3>
+          <p>打开即看附近门店，按距离浏览，减少盲目踩点。</p>
+        </article>
+        <article class="card">
+          <h3>条件筛选</h3>
+          <p>支持插座、Wi-Fi、厕所等高频条件，快速锁定目标门店。</p>
+        </article>
+        <article class="card">
+          <h3>真实补充</h3>
+          <p>用户共同补充久坐、噪音、人均和评论，让信息更实用。</p>
+        </article>
+        <article class="card">
+          <h3>一键导航</h3>
+          <p>看中后直接跳转地图导航，从找店到到店更顺畅。</p>
+        </article>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="./support/">技术支持</a>
+        <a class="btn btn-secondary" href="https://github.com/davidvvvzhang/youdian" target="_blank" rel="noreferrer">项目仓库</a>
+      </div>
+    </section>
+    <p class="foot">© 2026 张文熙（有店）. All Rights Reserved.</p>
+  </main>
+</body>
+</html>
